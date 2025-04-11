@@ -190,7 +190,7 @@
   </div>
 
   <!-- Single Image Centered -->
-  <div style="text-align: center; margin-bottom: 10px;">
+  <div style="width: 80%; text-align: center; margin-bottom: 10px;">
     <img src="static/images/cartpole.png" alt="CartPole Result" style="width: 600px; max-width: 100%; height: auto; border-radius: 6px;">
   </div>
 
@@ -213,34 +213,37 @@
     <!-- Image 1 -->
     <div style="width: 15%; text-align: center;">
       <img src="static/images/robot/plot0.png" alt="CartPole 1" style="width: 100%; height: auto; border-radius: 6px;">
-      <div style="font-size: 16px; color: #777; margin-top: 4px;">(a) Risk-neutral baseline</div>
+      <div style="font-size: 16px; color: #777; margin-top: 4px;">(a) Risk-neutral</div>
     </div>
 
     <!-- Image 2 -->
     <div style="width: 15%; text-align: center;">
       <img src="static/images/robot/plot1.png" alt="CartPole 2" style="width: 100%; height: auto; border-radius: 6px;">
-      <div style="font-size: 16px; color: #777; margin-top: 4px;">(b) Risk-averse β = -0.1</div>
+      <div style="font-size: 16px; color: #777; margin-top: 4px;">(b) \( \beta = -0.5 \)</div>
     </div>
 
     <!-- Image 3 -->
     <div style="width: 15%; text-align: center;">
       <img src="static/images/robot/plot2.png" alt="CartPole 3" style="width: 100%; height: auto; border-radius: 6px;">
-      <div style="font-size: 16px; color: #777; margin-top: 4px;">(c) Risk-averse β = -0.5</div>
+      <div style="font-size: 16px; color: #777; margin-top: 4px;">(c) \( \beta = -1.0 \)</div>
     </div>
 
     <!-- Image 4 -->
     <div style="width: 15%; text-align: center;">
       <img src="static/images/robot/plot3.png" alt="CartPole 4" style="width: 100%; height: auto; border-radius: 6px;">
-      <div style="font-size: 16px; color: #777; margin-top: 4px;">(d) Risk-averse β = -1.0</div>
+      <div style="font-size: 16px; color: #777; margin-top: 4px;">(d) \( \beta = -5.0 \)</div>
     </div>
   </div>
 
   <!-- Caption -->
   <div style="font-size: 16px; color: #555; max-width: 1000px; margin: 0 auto; text-align: justify; padding: 0 10px;">
     <p>
-      <b>Learning curves for risk-neutral and risk-averse algorithms with varying \( \beta \) values for the CartPole environment</b>. 
-      The shaded area indicates standard deviation over 10 runs. 
-      When \( \beta=-0.1 \), the learning curve of the risk-averse REINFORCE converges faster and achieves higher returns compared to the risk-neutral REINFORCE.
+      Learning curves for risk-neutral and risk-averse  cases with varying $\beta$ values in the holonomic robot navigation environment. 
+      The solid lines represent average returns over 10 runs, while the shaded lines indicate returns from an individual run. 
+      The risk-neutral policy exhibits large deviations and instability, with excessive oscillations. 
+      In contrast, the risk-averse policies with \( \beta = -0.5 \) and \( \beta = -1.0 \) demonstrate greater stability, faster convergence, and higher returns. 
+      However, when \( \beta = -5.0 \), the learning efficiency decreases because an excessively large magnitude of \( \beta \) leads to an overly conservative 
+      policy that prioritizes obstacle avoidance to the extent that learning efficiency is compromised.
     </p>
   </div>
 </section>
