@@ -65,7 +65,7 @@
               <span class="author-block">
                 <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Anish Gupta</a><sup></sup>,</span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=KRpb6Y0AAAAJ&hl=en&oi=sra" target="_blank">Erfaun Noorani</a><sup></sup>,</span>
+                <a href="https://enoorani.github.io/" target="_blank">Erfaun Noorani</a><sup></sup>,</span>
               <span class="author-block">
                 <a href="https://tokekar.com/" target="_blank">Pratap Tokekar</a>
                   </span>
@@ -131,11 +131,10 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/IMRL_App.mp4"
         type="video/mp4">
       </video>
@@ -151,7 +150,7 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -162,18 +161,15 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Robotic assistive feeding holds significant promise for improving the quality of life for individuals with eating disabilities. 
-            However, acquiring diverse food items under varying conditions and generalizing to unseen food presents unique challenges. 
-            Existing methods that rely on surface-level geometric information (e.g., bounding box and pose) derived from visual cues (e.g., color, shape, and texture) often lacks adaptability and robustness, 
-            especially when foods share similar physical properties but differ in visual appearance. 
-            We employ imitation learning (IL) to learn a policy for food acquisition. 
-            Existing methods employ IL or Reinforcement Learning (RL) to learn a policy based on off-the-shelf image encoders such as ResNet-50.
-            However, such representations are not robust and struggle to generalize across diverse acquisition scenarios.
-            To address these limitations, we propose a novel approach, <b>IMRL (Integrated Multi-Dimensional Representation Learning)</b>, which integrates visual, physical, temporal, and geometric representations to enhance the robustness and generalizability of IL for food acquisition. 
-            Our approach captures food types and physical properties (e.g., solid, semi-solid, granular, liquid, and mixture), models temporal dynamics of acquisition actions, and introduces geometric information to determine optimal scooping points and assess bowl fullness.
-            IMRL enables IL to adaptively adjust scooping strategies based on context, improving the robot's capability to handle diverse food acquisition scenarios. 
-            Experiments on a real robot demonstrate our approach's robustness and adaptability across various foods and bowl configurations, including zero-shot generalization to unseen settings.
-            Our approach achieves improvement up to <b>35</b>% in success rate compared with the best-performing baseline.
+            Reinforcement Learning (RL) has shown exceptional performance across various applications, enabling autonomous agents to learn optimal policies through interaction with their environments. 
+            However, traditional RL frameworks often face challenges in terms of iteration efficiency and robustness. 
+            Risk-sensitive policy gradient methods, which incorporate both expected return and risk measures, have been explored for their ability to yield more robust policies, yet their iteration complexity remains largely underexplored. 
+            In this work, we conduct a rigorous iteration complexity analysis for the risk-sensitive policy gradient method, focusing on the REINFORCE algorithm with an exponential utility function. 
+            We establish an iteration complexity of $\mathcal{O}(\epsilon^{-2})$ to reach an $\epsilon$-approximate first-order stationary point (FOSP). 
+            Furthermore, we investigate whether risk-sensitive algorithms can achieve better iteration complexity compared to their risk-neutral counterparts. 
+            Our analysis indicates that risk-sensitive REINFORCE can potentially converge faster. 
+            To validate our analysis, we empirically evaluate the learning performance and convergence efficiency of the risk-neutral and risk-sensitive REINFORCE algorithms in multiple environments: CartPole, MiniGrid, and Robot Navigation. 
+            Empirical results confirm that risk-averse cases can converge and stabilize faster compared to their risk-neutral counterparts.
           </p>
         </div>
       </div>
@@ -185,7 +181,7 @@
 
 <!-- Motivation -->
 <!--   <section class="hero is-light"> -->
-  <div style="text-align: center; font-size: 28px; font-weight: bold; margin-bottom: 10px; margin-top: 30px">
+<!--   <div style="text-align: center; font-size: 28px; font-weight: bold; margin-bottom: 10px; margin-top: 30px">
     Motivation
   </div>
   
@@ -209,7 +205,7 @@ for food acquisition.
         </h2>
     </div>
   </div>
-  </div>
+  </div> -->
 <!--   </section> -->
 
 <!-- Image carousel -->
@@ -268,100 +264,10 @@ for food acquisition.
 
 
  <!-- Experiments -->
-  <section class="hero">
-  <div style="text-align: center; font-size: 28px; font-weight: bold; margin-bottom: 10px;  margin-top: 30px;">
-    IMRL (Seen)
-  </div>
-
-  <!-- First row of videos from Google Drive -->
-  <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 10px;">
-    <!-- Video 1 -->
-    <iframe src="https://drive.google.com/file/d/1FKQoKKr5lud40c3NcrcGsVeCKNcDCddH/preview" width="300" height="200" allow="autoplay"></iframe>
-
-    <!-- Video 2 -->
-    <iframe src="https://drive.google.com/file/d/1QgTuq_wQFejDWSV01UZdvmMwJ-z4u4u7/preview" width="300" height="200" allow="autoplay"></iframe>
-
-    <!-- Video 3 -->
-    <iframe src="https://drive.google.com/file/d/1hxFcgvzLVLT0feGpOEqpnYfZKhyY_cZI/preview" width="300" height="200" allow="autoplay"></iframe>
-  </div>
-
-  <!-- Single Caption for all videos -->
-  <div style="text-align: center; font-size: 20px; color: #555; max-width: 1000px; margin: 0 auto;">
-    Real UR3 robot experimental testing of IMRL on <b>seen</b> scenarios, including a white circular bowl containing granular cereals, semi-solid jello, and liquid water. 
-  </div>
-
- <!-- Section Title -->
-  <div style="text-align: center; font-size: 28px; font-weight: bold; margin-bottom: 10px;  margin-top: 30px;">
-    IMRL (Unseen)
-  </div>
-
-  <!-- First row of videos from Google Drive -->
-  <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 10px;">
-    <!-- Video 1 -->
-    <iframe src="https://drive.google.com/file/d/1LmHv23Ilc8-yg_LHyyfdN0JzxlMhvROK/preview" width="300" height="200" allow="autoplay"></iframe>
-
-    <!-- Video 2 -->
-    <iframe src="https://drive.google.com/file/d/17IxKvs_MCbRCDaR7p_of1TJuG4UN5uPs/preview" width="300" height="200" allow="autoplay"></iframe>
-
-    <!-- Video 3 -->
-    <iframe src="https://drive.google.com/file/d/1pFqFr8YtIXTt3hmVmOpBTPowuc3_z0Qk/preview" width="300" height="200" allow="autoplay"></iframe>
-
-    <!-- Video 4 -->
-    <iframe src="https://drive.google.com/file/d/10eEsN7rQNIZue2C38rEybJG7Mh5Eh7e_/preview" width="300" height="200" allow="autoplay"></iframe>
-  </div>
-
-  <!-- Second row of videos from Google Drive -->
-  <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 20px;">
-    <!-- Video 5 -->
-    <iframe src="https://drive.google.com/file/d/1msk-zjwk7GHQPYlDLlOqU_6jbpphBcnB/preview" width="300" height="200" allow="autoplay"></iframe>
-
-    <!-- Video 6 -->
-    <iframe src="https://drive.google.com/file/d/1QrovthBNzma8C_t3ARdaoYL8v9iUW3Ok/preview" width="300" height="200" allow="autoplay"></iframe>
-
-    <!-- Video 7 -->
-    <iframe src="https://drive.google.com/file/d/1wPBT1i9egYJoSyjnWLpuLS8ChJheohHn/preview" width="300" height="200" allow="autoplay"></iframe>
-
-    <!-- Video 8 -->
-    <iframe src="https://drive.google.com/file/d/1auIoa_y-kHlSpvtG3anzIqY1QDZBXfgr/preview" width="300" height="200" allow="autoplay"></iframe>
-  </div>
-
-  <!-- Single Caption for all videos -->
-  <div style="text-align: center; font-size: 20px; color: #555; max-width: 1000px; margin: 0 auto;">
-    Real UR3 robot experimental testing of IMRL on <b>unseen</b> scenarios, including large and small blue circular bowls, a transparent square bowl, containing rice, black beans, yellow beans, red beans, and milk. 
-  </div>
 
 
-  <!-- Baseline Comparison -->
-  <div style="text-align: center; font-size: 28px; font-weight: bold; margin-bottom: 10px; margin-top: 30px">
-   Baseline Comparison
-  </div>
 
-  <!-- Row of three videos from Google Drive -->
-  <div style="display: flex; justify-content: center; gap: 10px;">
 
-    <!-- Video 1 with caption -->
-    <div style="text-align: center;">
-      <iframe src="https://drive.google.com/file/d/1QgTuq_wQFejDWSV01UZdvmMwJ-z4u4u7/preview" width="300" height="200" allow="autoplay"></iframe>
-      <div style="margin-top: 5px; font-size: 16px;">IMRL (Seen)</div>
-    </div>
-
-    <!-- Video 2 with caption -->
-    <div style="text-align: center;">
-      <iframe src="https://drive.google.com/file/d/1auIoa_y-kHlSpvtG3anzIqY1QDZBXfgr/preview" width="300" height="200" allow="autoplay"></iframe>
-      <div style="margin-top: 5px; font-size: 16px;">IMRL (Unseen)</div>
-    </div>
-
-    <!-- Video 3 with caption -->
-    <div style="text-align: center;">
-      <iframe src="https://drive.google.com/file/d/1ZQmgs4UvhRiwVWHAqD2wjQemFUFMhATn/preview" width="300" height="200" allow="autoplay"></iframe>
-      <div style="margin-top: 5px; font-size: 16px;">Baseline</div>
-    </div>
-  </div>
-  
-  <div style="text-align: center; font-size: 20px; color: #555; max-width: 1000px; margin: 0 auto;">
-    IMRL successfully generalizes to unseen scenarios, but baseline fails. 
-  </div>
-  </section>
 
  <!-- Video Representation -->
 <!--   <section class="hero is-small is-light">
