@@ -183,10 +183,10 @@
 <!-- End paper abstract -->
 
 
-<!-- Motivation -->
+<!-- Experiments -->
 <section class="hero">
   <div style="text-align: center; font-size: 28px; font-weight: bold; margin-bottom: 10px; margin-top: 30px">
-    Motivation
+    CartPole
   </div>
   
   <div style="text-align: center; margin-bottom: 20px;">
@@ -196,14 +196,9 @@
         <h2 class="subtitle has-text-centered">
           <div class="content has-text-justified">
             <p>
-          Comparison of standard BC and our approach
-for food acquisition. The standard BC (top) processes robot
-observations through an off-the-shelf encoder (e.g., ResNet-50), generating actions that are not robust and generalizable.
-In contrast, our proposed approach IMRL (bottom) utilizes
-visual, physical, temporal andd geometric representation
-learning to develop richer and more informative represen-
-tations to enhance the robustness and generalizability of BC
-for food acquisition.
+              <b>Learning curves for risk-neutral and risk-averse algorithms with varying \( \beta \) values for the CartPole environment</b>. 
+              The shaded area indicates standard deviation over 10 runs. 
+              When \( \beta=-0.1 \), the learning curve of the risk-averse REINFORCE converges faster and achieves higher returns compared to the risk-neutral REINFORCE.
           </p>
       </div>
         </h2>
@@ -211,39 +206,6 @@ for food acquisition.
   </div>
   </div>
 </section>
-
- <!-- Experiments -->
-  
-  <section>
-<!--     <h1>Experiments</h1> -->
-    <div style="text-align: center; font-size: 28px; font-weight: bold; margin-bottom: 10px; margin-top: 30px">
-      Experiments
-    </div>
-
-    <section>
-      <h2>CartPole</h2>
-
-      <!-- Row of images with captions -->
-<!--       <div class="image-row">
-        <figure>
-          <img src="cartpole1.png" alt="CartPole 1">
-          <figcaption>CartPole: Success</figcaption>
-        </figure>
-        <figure>
-          <img src="cartpole2.png" alt="CartPole 2">
-          <figcaption>CartPole: Failure Case</figcaption>
-        </figure>
-      </div> -->
-
-      <!-- Single image with caption -->
-      <div class="single-image">
-        <figure>
-         <img src="static/images/cartpole.png" alt="Descriptive Alt Text" style="max-width: 100%; width: 600px; height: auto;">
-          <figcaption>Summary plot of CartPole results</figcaption>
-        </figure>
-      </div>
-    </section>
-  </section>
 
 
 
