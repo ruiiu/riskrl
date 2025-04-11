@@ -270,78 +270,75 @@
 
     <!-- Image 1 -->
     <div style="width: 15%; text-align: center;">
-      <img src="static/images/robot/plot0.png" alt="CartPole 1" style="width: 100%; height: auto; border-radius: 6px;">
+      <img src="static/images/minigrid/g_0.png" alt="CartPole 1" style="width: 100%; height: auto; border-radius: 6px;">
       <div style="font-size: 16px; color: #777; margin-top: 4px;">(a) Risk-neutral</div>
     </div>
 
     <!-- Image 2 -->
     <div style="width: 15%; text-align: center;">
-      <img src="static/images/robot/plot1.png" alt="CartPole 2" style="width: 100%; height: auto; border-radius: 6px;">
-      <div style="font-size: 16px; color: #777; margin-top: 4px;">(b) \( \beta = -0.5 \)</div>
+      <img src="static/images/minigrid/g_-0.1.png" alt="CartPole 2" style="width: 100%; height: auto; border-radius: 6px;">
+      <div style="font-size: 16px; color: #777; margin-top: 4px;">(b) \( \beta = -0.1 \)</div>
     </div>
 
     <!-- Image 3 -->
     <div style="width: 15%; text-align: center;">
-      <img src="static/images/robot/plot2.png" alt="CartPole 3" style="width: 100%; height: auto; border-radius: 6px;">
-      <div style="font-size: 16px; color: #777; margin-top: 4px;">(c) \( \beta = -1.0 \)</div>
+      <img src="static/images/minigrid/g_-0.5.png" alt="CartPole 3" style="width: 100%; height: auto; border-radius: 6px;">
+      <div style="font-size: 16px; color: #777; margin-top: 4px;">(c) \( \beta = -0.5 \)</div>
     </div>
 
     <!-- Image 4 -->
     <div style="width: 15%; text-align: center;">
-      <img src="static/images/robot/plot3.png" alt="CartPole 4" style="width: 100%; height: auto; border-radius: 6px;">
-      <div style="font-size: 16px; color: #777; margin-top: 4px;">(d) \( \beta = -5.0 \)</div>
+      <img src="static/images/minigrid/g_-10.0.png" alt="CartPole 4" style="width: 100%; height: auto; border-radius: 6px;">
+      <div style="font-size: 16px; color: #777; margin-top: 4px;">(d) \( \beta = -10.0 \)</div>
     </div>
   </div>
 
   <!-- Caption -->
   <div style="font-size: 16px; color: #555; max-width: 1000px; margin: 0 auto; text-align: justify; padding: 0 10px;">
     <p>
-      <b>Learning curves for risk-neutral and risk-averse  cases with varying \( \beta \) values in the holonomic robot navigation environment</b>. 
-      The solid lines represent average returns over 10 runs, while the shaded lines indicate returns from an individual run. 
-      The risk-neutral policy exhibits large deviations and instability, with excessive oscillations. 
-      In contrast, the risk-averse policies with \( \beta = -0.5 \) and \( \beta = -1.0 \) demonstrate greater stability, faster convergence, and higher returns. 
-      However, when \( \beta = -5.0 \), the learning efficiency decreases because an excessively large magnitude of \( \beta \) leads to an overly conservative 
-      policy that prioritizes obstacle avoidance to the extent that learning efficiency is compromised.
+      <b>The gradient norm of risk-neutral and risk-averse algorithms with varying \( \beta \) values for the MiniGrid environment</b>. 
+      The gradient norm decreases more rapidly when \( \beta = -0.1 \) and \( \beta = -0.5 \) for the risk-averse algorithm compared to its risk-neutral counterpart, 
+      and the norm exhibits smoother behavior in risk-averse cases. However, when the magnitude of $\beta$ becomes overly large (\( \beta = -10.0 \)), 
+      the gradient norm becomes large, impeding the learning process.
     </p>
   </div>
 
   <!-- 2x2 Image Grid -->
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 15px; margin-top: 20px">
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 15px; margin-top: 30px">
 
     <!-- Image 1 -->
     <div style="width: 15%; text-align: center;">
-      <img src="static/images/robot/plot0.png" alt="CartPole 1" style="width: 100%; height: auto; border-radius: 6px;">
+      <img src="static/images/minigrid/reward_0_edit.png" alt="CartPole 1" style="width: 100%; height: auto; border-radius: 6px;">
       <div style="font-size: 16px; color: #777; margin-top: 4px;">(a) Risk-neutral</div>
     </div>
 
     <!-- Image 2 -->
     <div style="width: 15%; text-align: center;">
-      <img src="static/images/robot/plot1.png" alt="CartPole 2" style="width: 100%; height: auto; border-radius: 6px;">
-      <div style="font-size: 16px; color: #777; margin-top: 4px;">(b) \( \beta = -0.5 \)</div>
+      <img src="static/images/minigrid/reward_-0.1_edit.png" alt="CartPole 2" style="width: 100%; height: auto; border-radius: 6px;">
+      <div style="font-size: 16px; color: #777; margin-top: 4px;">(b) \( \beta = -0.1 \)</div>
     </div>
 
     <!-- Image 3 -->
     <div style="width: 15%; text-align: center;">
-      <img src="static/images/robot/plot2.png" alt="CartPole 3" style="width: 100%; height: auto; border-radius: 6px;">
-      <div style="font-size: 16px; color: #777; margin-top: 4px;">(c) \( \beta = -1.0 \)</div>
+      <img src="static/images/minigrid/reward_-0.5_edit.png" alt="CartPole 3" style="width: 100%; height: auto; border-radius: 6px;">
+      <div style="font-size: 16px; color: #777; margin-top: 4px;">(c) \( \beta = -0.5 \)</div>
     </div>
 
     <!-- Image 4 -->
     <div style="width: 15%; text-align: center;">
-      <img src="static/images/robot/plot3.png" alt="CartPole 4" style="width: 100%; height: auto; border-radius: 6px;">
-      <div style="font-size: 16px; color: #777; margin-top: 4px;">(d) \( \beta = -5.0 \)</div>
+      <img src="static/images/minigrid/reward_-10.0.png" alt="CartPole 4" style="width: 100%; height: auto; border-radius: 6px;">
+      <div style="font-size: 16px; color: #777; margin-top: 4px;">(d) \( \beta = -10.0 \)</div>
     </div>
   </div>
 
   <!-- Caption -->
   <div style="font-size: 16px; color: #555; max-width: 1000px; margin: 0 auto; text-align: justify; padding: 0 10px;">
     <p>
-      <b>Learning curves for risk-neutral and risk-averse  cases with varying \( \beta \) values in the holonomic robot navigation environment</b>. 
-      The solid lines represent average returns over 10 runs, while the shaded lines indicate returns from an individual run. 
-      The risk-neutral policy exhibits large deviations and instability, with excessive oscillations. 
-      In contrast, the risk-averse policies with \( \beta = -0.5 \) and \( \beta = -1.0 \) demonstrate greater stability, faster convergence, and higher returns. 
-      However, when \( \beta = -5.0 \), the learning efficiency decreases because an excessively large magnitude of \( \beta \) leads to an overly conservative 
-      policy that prioritizes obstacle avoidance to the extent that learning efficiency is compromised.
+      <b>Learning curves for risk-neutral and risk-averse algorithms with varying $\beta$ values for the Minigrid environment</b>. 
+      Arrows (\( \uparrow \)) in (a) depict extreme values. The risk-neutral case displays more variability and more significant extreme values. 
+      In contrast, the risk-averse cases exhibit less variability and fewer extreme values when \( \beta = -0.1 \) and \( \beta = -0.5 \), 
+      suggesting that they require fewer episodes to converge and stabilize. However, when \( \beta = -10.0 \), the gradient norm becomes large, 
+      leading to an oscillatory learning curve that hinders the learning process.
     </p>
   </div>
   
